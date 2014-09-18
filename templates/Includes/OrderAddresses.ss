@@ -7,10 +7,8 @@
 		<td>
 			$BillingFirstName $BillingSurname 
 				
-			<% if MemberEmail %>
-				<a href="Mailto:$MemberEmail">$MemberEmail</a>
-			<% end_if %>
-			<br />
+			<% if Member.Email %><a href="Mailto:$Member.Email">$Member.Email</a><br /><% end_if %>
+			<% if Member.Phone %>$Member.Phone<br /><% end_if %>
 				
 			<% if BillingCompany %>      $BillingCompany<br />      <% end_if %>
 			<% if BillingAddress %>      $BillingAddress<br />      <% end_if %>
